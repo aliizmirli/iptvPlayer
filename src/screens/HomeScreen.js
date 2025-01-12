@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { MaterialIcons } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 
 const HomeScreen = ({ navigation }) => {
@@ -47,7 +47,7 @@ const HomeScreen = ({ navigation }) => {
         style={styles.deleteButton}
         onPress={() => deleteM3ULink(item)}
       >
-        <Icon name="delete" size={24} color="#FF3B30" />
+        <MaterialIcons name="delete" size={24} color="#FF3B30" />
       </TouchableOpacity>
     </View>
   );
@@ -66,7 +66,7 @@ const HomeScreen = ({ navigation }) => {
         style={styles.addButton}
         onPress={() => navigation.navigate('AddM3U')}
       >
-        <Icon name="add" size={30} color="#fff" />
+        <MaterialIcons name="add" size={30} color="#fff" />
       </TouchableOpacity>
     </View>
   );
