@@ -24,7 +24,7 @@ const LoadingScreen = () => (
   </View>
 );
 
-const App = () => {
+export default function App() {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
@@ -89,6 +89,4 @@ const App = () => {
       </NavigationContainer>
     </SafeAreaProvider>
   );
-};
-
-export default App;
+}
